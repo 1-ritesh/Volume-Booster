@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background -->
+    <color name="bg_dark">#0F1117</color>
+    <color name="card_bg">#1A1D27</color>
+
+    <!-- Accent -->
+    <color name="accent_orange">#FF6B35</color>
+    <color name="accent_orange_dim">#33FF6B35</color>
+
+    <!-- Text -->
+    <color name="white">#FFFFFF</color>
+    <color name="text_secondary">#8A8EA8</color>
+
+    <!-- Slider -->
+    <color name="slider_inactive">#2E3246</color>
+    <color name="track_color">#2E3246</color>
+
+    <!-- Status bar -->
+    <color name="colorPrimary">#0F1117</color>
+    <color name="colorPrimaryDark">#0F1117</color>
+    <color name="colorAccent">#FF6B35</color>
+</resources>

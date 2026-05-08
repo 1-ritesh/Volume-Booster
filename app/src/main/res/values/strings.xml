@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Volume Booster</string>
+    <string name="booster_on">Booster ON</string>
+    <string name="booster_off">Booster OFF</string>
+    <string name="boost_level">Boost Level</string>
+    <string name="sound_modes">Sound Modes</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="no_song">No song playing</string>
+    <string name="unknown_artist">Unknown Artist</string>
+</resources>

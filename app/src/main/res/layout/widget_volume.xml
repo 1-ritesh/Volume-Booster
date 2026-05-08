@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="8dp">
+
+    <ImageButton
+        android:id="@+id/btnWidgetDown"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_volume_down"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:tint="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/btnWidgetToggle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_boost_off"
+        android:background="@drawable/circle_orange_btn"
+        android:padding="10dp"
+        android:layout_marginHorizontal="8dp"
+        android:tint="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/btnWidgetUp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_volume_up"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:tint="@color/white"/>
+
+</LinearLayout>
