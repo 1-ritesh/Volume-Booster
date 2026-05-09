@@ -213,7 +213,11 @@ public class MusicService extends Service {
                 .setSilent(true)
                 .build();
 
-        startForeground(2, notif);
+        try {
+            startForeground(2, notif);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
