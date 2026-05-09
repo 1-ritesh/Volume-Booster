@@ -32,7 +32,11 @@ public class VolumeBoosterService extends Service {
         volumeManager = new VolumeManager(this);
         audioManager  = (AudioManager) getSystemService(AUDIO_SERVICE);
         createNotificationChannel();
-        startForeground(1, buildNotification());
+        try {
+            startForeground(1, buildNotification());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
