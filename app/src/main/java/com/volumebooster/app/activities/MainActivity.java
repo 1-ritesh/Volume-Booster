@@ -287,13 +287,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startAndBindServices() {
-        Intent boosterIntent = new Intent(this, VolumeBoosterService.class);
-        startService(boosterIntent);
-        bindService(boosterIntent, boosterConnection, Context.BIND_AUTO_CREATE);
+        try {
+            Intent boosterIntent = new Intent(this, VolumeBoosterService.class);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                startForegroundService(boosterIntent);
+            } else {
+                startService(boosterIntent);
+            }
+            bindService(boosterIntent, boosterConnection, Context.BIND_AUTO_CREATE);
+        } catch (Exception e) { e.printStackTrace(); }
 
-        Intent musicIntent = new Intent(this, MusicService.class);
-        startService(musicIntent);
-        bindService(musicIntent, musicConnection, Context.BIND_AUTO_CREATE);
+        try {
+            Intent musicIntent = new Intent(this, MusicService.class);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                startForegroundService(musicIntent);
+            } else {
+                startService(musicIntent);
+            }
+            bindService(musicIntent, musicConnection, Context.BIND_AUTO_CREATE);
+        } catch (Exception e) { e.printStackTrace(); }
     }
 
     private void requestPermissions() {
